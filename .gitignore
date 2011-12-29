@@ -7,6 +7,9 @@
 # Ignore bundler config
 /.bundle
 
+# Ignore rubymine configuration
+/.idea
+
 # Ignore the default SQLite database.
 /db/*.sqlite3
 
