@@ -6,7 +6,24 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
+    .topbar{"data-scrollspy" => "scrollspy"}
+      .topbar-inner
+        .container
+          %a.brand{href: "/"} Bootstrap
+          %ul.nav
+            %li= link_to "Link", "#"
+
+    %header.jumbotron.masthead#overview
+      .inner
+        .container
+          %h1 Bootstrap
+          %p.lead
+            Easy Rails startup
     .container-fluid
       .sidebar
+        .well
+          %h4 Sidebar
+          %nav
+            %ul= link_to "Link", "#"
       .content
         = yield
